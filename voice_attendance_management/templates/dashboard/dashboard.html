@@ -1,0 +1,27 @@
+{% extends 'tasks/base.html' %}
+
+{% block content %}
+<h2>Welcome, {{ user.username }}</h2>
+
+<h3>📅 Attendance</h3>
+<table>
+    <tr>
+        <th>Date</th>
+        <th>Status</th>
+    </tr>
+    {% for record in attendance %}
+    <tr>
+        <td>{{ record.date }}</td>
+        <td>{{ record.status }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<h3>📌 Tasks</h3>
+<ul>
+    {% for task in tasks %}
+    <li>{{ task.title }} - {{ task.status }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

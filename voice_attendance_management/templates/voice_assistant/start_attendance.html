@@ -1,0 +1,11 @@
+{% extends 'tasks/base.html' %}
+
+{% block content %}
+<h2>Start Attendance</h2>
+<p>{{ message }}</p>
+
+<form method="POST">
+    {% csrf_token %}
+    <button type="submit">Start Attendance</button>
+</form>
+{% endblock %}

@@ -1,0 +1,82 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+    max-width: 90%;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Welcome Text */
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Role Styling */
+.role {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.student {
+    background: #4caf50;
+    color: white;
+}
+
+.teacher {
+    background: #007bff;
+    color: white;
+}
+
+/* Logout Button */
+.logout-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background: #ff4757;
+    color: white;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.logout-btn:hover {
+    background: #e84118;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
